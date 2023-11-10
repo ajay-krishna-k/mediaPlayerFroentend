@@ -5,8 +5,6 @@ import Modal from 'react-bootstrap/Modal';
 import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import { uploadVideo } from '../services/allAPI';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 
 function Add({setUploadVideoStatus}) {
   const [show, setShow] = useState(false);
@@ -97,7 +95,6 @@ return (
       <Link to={'/watch-history'} style={{ textDecoration: 'none', color: "black" }}>Watch History</Link>
     </div>
 
-    {/* <ToastContainer position='top-center' theme='coloured' autoClose={2000} /> */}
 
   </div>
 )
